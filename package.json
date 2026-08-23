@@ -1,0 +1,26 @@
+{
+  "name": "embed-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "面向中文嵌入式工程师的开源知识库与在线工具箱。",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vitepress dev site --host 127.0.0.1",
+    "build": "vitepress build site",
+    "preview": "vitepress preview site --host 127.0.0.1",
+    "typecheck": "vue-tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "vue": "3.5.41"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitepress": "1.6.4",
+    "vue-tsc": "3.3.11"
+  }
+}
