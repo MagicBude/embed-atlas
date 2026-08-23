@@ -51,6 +51,10 @@ export default defineConfig({
               text: '整数、进制与位模式',
               link: '/knowledge/foundations/integer-radix-bit-pattern',
             },
+            {
+              text: '二进制补码与有符号整数范围',
+              link: '/knowledge/foundations/twos-complement-signed-range',
+            },
           ],
         },
       ],

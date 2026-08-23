@@ -31,8 +31,15 @@
 }
 
 .vp-doc table {
-  display: table;
+  /*
+   * 表格仍占满可用正文宽度，但超宽内容只在表格内部滚动。
+   * 如果使用 display: table，64 位整数等不可换行内容会把整个手机页面撑宽，
+   * 导致正文和导航一起出现横向滚动条。
+   */
+  display: block;
   width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .vp-doc :not(pre) > code {

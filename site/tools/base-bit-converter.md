@@ -23,7 +23,10 @@ import BaseBitConverter from '../components/tools/BaseBitConverter.vue'
 
 工具会同时显示两种十进制结果，不要求你在输入前先选“有符号”或“无符号”。二、八、十六进制输入表示原始位模式；需要输入负数时请选择十进制。
 
-完整推导和练习见：[整数、进制与位模式](/knowledge/foundations/integer-radix-bit-pattern)。
+完整推导和练习见：
+
+- [整数、进制与位模式](/knowledge/foundations/integer-radix-bit-pattern)：理解进制、位宽和位模式。
+- [二进制补码与有符号整数范围](/knowledge/foundations/twos-complement-signed-range)：理解负数编码、符号扩展和有符号边界。
 
 ## 运算规则
 
