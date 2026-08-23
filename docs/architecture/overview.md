@@ -49,7 +49,9 @@ embed-atlas/
 ├─ docs/                         # 项目规划、架构和规范
 │  ├─ architecture/
 │  ├─ development/
+│  ├─ product/
 │  ├─ project/
+│  ├─ research/
 │  ├─ standard/
 │  └─ templates/
 ├─ site/                         # VitePress 站点根目录
@@ -101,4 +103,3 @@ embed-atlas/
 - 自建编译、烧录和调试 IDE。
 
 这些限制不是永久禁止，而是保护第一阶段的可交付性。
-

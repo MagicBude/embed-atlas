@@ -32,6 +32,9 @@ EmbedAtlas 希望把分散在芯片手册、协议标准、厂商文档、个人
 - [长期路线图](docs/roadmap.md)
 - [当前状态与下一步](docs/project/status.md)
 - [总体架构](docs/architecture/overview.md)
+- [产品信息架构](docs/product/information-architecture.md)
+- [UI 与交互设计原则](docs/product/ui-ux-guidelines.md)
+- [参考网站研究](docs/research/reference-sites.md)
 - [参与贡献](CONTRIBUTING.md)
 - [变更记录](CHANGELOG.md)
 

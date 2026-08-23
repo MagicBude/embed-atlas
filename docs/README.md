@@ -8,6 +8,16 @@
 - [长期路线图](roadmap.md)：从基础规划到可持续社区的阶段目标。
 - [当前状态](project/status.md)：现在做到哪里、下一步做什么。
 
+## 产品规划
+
+- [产品信息架构](product/information-architecture.md)
+- [UI 与交互设计原则](product/ui-ux-guidelines.md)
+- [在线工具路线图](product/tool-roadmap.md)
+
+## 调研
+
+- [参考网站研究](research/reference-sites.md)
+
 ## 架构
 
 - [总体架构](architecture/overview.md)
@@ -35,8 +45,9 @@
 ## 维护规则
 
 - 稳定原则写入 `vision.md` 和 `architecture/`。
+- 产品页面、交互和功能顺序写入 `product/`。
+- 外部参考、竞品观察和调研证据写入 `research/`。
 - 阶段目标写入 `roadmap.md`。
 - 当前事实和最近下一步只写入 `project/status.md`。
 - 已发生的用户可见变化写入根目录 `CHANGELOG.md`。
 - 不在多个文件重复维护同一份任务清单。
-
