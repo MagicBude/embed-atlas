@@ -4,7 +4,7 @@
 
 EmbedAtlas 希望把分散在芯片手册、协议标准、厂商文档、个人笔记和在线计算器中的知识，整理为结构清晰、可以验证、方便查阅的中文内容。项目同时提供与知识文章相互关联的在线工具，让读者不仅知道“是什么”，还可以立即计算、转换和验证。
 
-> 当前状态：项目处于 `Phase 0：基础规划`，正在建立长期架构、协作规范和内容标准，尚未开始正式网站功能开发。
+> 当前状态：项目处于 `Phase 1：最小可用网站`，正在完成首批 10 篇知识文章和 3 个经过测试的在线工具。实时进展见 [`PROJECT_STATUS.md`](PROJECT_STATUS.md)。
 
 ## 项目目标
 
@@ -30,7 +30,9 @@ EmbedAtlas 希望把分散在芯片手册、协议标准、厂商文档、个人
 - [文档导航](docs/README.md)
 - [项目愿景](docs/vision.md)
 - [长期路线图](docs/roadmap.md)
-- [当前状态与下一步](docs/project/status.md)
+- [项目状态总览](PROJECT_STATUS.md)
+- [详细当前状态与下一步](docs/project/status.md)
+- [追加式工作日志](docs/work-log.md)
 - [总体架构](docs/architecture/overview.md)
 - [产品信息架构](docs/product/information-architecture.md)
 - [UI 与交互设计原则](docs/product/ui-ux-guidelines.md)

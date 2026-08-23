@@ -17,11 +17,13 @@ EmbedAtlas 是面向中文嵌入式工程师的开源知识库与在线工具箱
 按以下顺序读取：
 
 1. 本文件 `AGENTS.md`。
-2. `docs/project/status.md`：确认当前阶段、已完成事项和下一步。
-3. `docs/roadmap.md`：确认本次工作属于哪个阶段。
-4. `docs/architecture/overview.md`：确认模块边界。
-5. 与任务相关的 `docs/standard/` 和 `docs/architecture/` 文档。
-6. `CHANGELOG.md` 与 `git status`：确认已有变更，避免覆盖他人工作。
+2. 根目录 `PROJECT_STATUS.md`：快速了解阶段、里程碑和阻塞。
+3. `docs/project/status.md`：确认详细完成项和近期行动。
+4. `docs/work-log.md`：了解最近执行事实与验证结果。
+5. `docs/roadmap.md`：确认本次工作属于哪个阶段。
+6. `docs/architecture/overview.md`：确认模块边界。
+7. 与任务相关的 `docs/standard/` 和 `docs/architecture/` 文档。
+8. `CHANGELOG.md` 与 `git status`：确认已有变更，避免覆盖他人工作。
 
 不能因为仓库暂时简单而跳过这些入口。
 
@@ -30,7 +32,9 @@ EmbedAtlas 是面向中文嵌入式工程师的开源知识库与在线工具箱
 | 文件或目录 | 职责 |
 | --- | --- |
 | `AGENTS.md` | 跨开发者、跨设备、跨 AI 的工作规则 |
-| `docs/project/status.md` | 当前事实、进行中的工作和最近下一步 |
+| `PROJECT_STATUS.md` | 快速接续总览：阶段、里程碑和阻塞 |
+| `docs/project/status.md` | 详细当前事实、进行中工作和最近下一步 |
+| `docs/work-log.md` | 追加式执行事实、关键判断和验证结果 |
 | `docs/roadmap.md` | 阶段目标和长期方向，不记录细碎任务 |
 | `docs/architecture/` | 稳定的系统边界、模块设计和架构决策 |
 | `docs/product/` | 产品信息架构、交互原则和功能路线 |
@@ -69,7 +73,8 @@ EmbedAtlas 是面向中文嵌入式工程师的开源知识库与在线工具箱
 
 完成有实际意义的工作后，根据影响范围同步：
 
-- 更新 `docs/project/status.md` 中的完成项和下一步。
+- 根据影响范围同步 `PROJECT_STATUS.md` 和 `docs/project/status.md`。
+- 完成独立工作批次后在 `docs/work-log.md` 顶部追加记录。
 - 用户可感知的新增、修改或修复写入 `CHANGELOG.md` 的 `[Unreleased]`。
 - 架构方向变化必须增加或更新 ADR，不得只写在代码注释或聊天中。
 - 新增知识分类或工具分类时更新对应架构文档和导航。

@@ -6,7 +6,8 @@
 
 - [项目愿景](vision.md)：为什么做、为谁做、坚持什么原则。
 - [长期路线图](roadmap.md)：从基础规划到可持续社区的阶段目标。
-- [当前状态](project/status.md)：现在做到哪里、下一步做什么。
+- [项目状态总览](../PROJECT_STATUS.md)：快速了解当前阶段、里程碑和阻塞。
+- [详细当前状态](project/status.md)：详细完成项、进行中的工作和最近下一步。
 
 ## 产品规划
 
@@ -30,6 +31,7 @@
 
 - [开始开发](development/getting-started.md)
 - [开发工作流](development/workflow.md)
+- [工作日志](work-log.md)
 
 ## 规范
 
@@ -49,6 +51,8 @@
 - 产品页面、交互和功能顺序写入 `product/`。
 - 外部参考、竞品观察和调研证据写入 `research/`。
 - 阶段目标写入 `roadmap.md`。
-- 当前事实和最近下一步只写入 `project/status.md`。
+- 项目阶段、里程碑和阻塞同步到根目录 `PROJECT_STATUS.md`。
+- 详细完成项和最近下一步继续维护在 `project/status.md`。
+- 执行事实、判断和验证结果追加到 `work-log.md`，新记录放在最上方。
 - 已发生的用户可见变化写入根目录 `CHANGELOG.md`。
 - 不在多个文件重复维护同一份任务清单。
