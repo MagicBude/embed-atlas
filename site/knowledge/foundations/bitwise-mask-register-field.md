@@ -415,7 +415,7 @@ CMSIS-Core 推荐用字段位置和掩码定义寄存器字段，并提供编码
 - 前置：[整数、进制与位模式](./integer-radix-bit-pattern)。
 - 前置：[二进制补码与有符号整数范围](./twos-complement-signed-range)。
 - 工具：[进制与位运算转换器](/tools/base-bit-converter)。
-- 后续：C 定宽整数、提升与溢出边界。
+- 下一篇：[C 定宽整数、整数提升与溢出边界](../c-language/c-fixed-width-integers)。
 
 ## 参考资料
 

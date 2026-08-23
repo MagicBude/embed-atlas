@@ -28,6 +28,7 @@ import BaseBitConverter from '../components/tools/BaseBitConverter.vue'
 - [整数、进制与位模式](/knowledge/foundations/integer-radix-bit-pattern)：理解进制、位宽和位模式。
 - [二进制补码与有符号整数范围](/knowledge/foundations/twos-complement-signed-range)：理解负数编码、符号扩展和有符号边界。
 - [位运算、位掩码与寄存器字段](/knowledge/foundations/bitwise-mask-register-field)：理解掩码、字段提取以及真实寄存器的访问风险。
+- [C 定宽整数、整数提升与溢出边界](/knowledge/c-language/c-fixed-width-integers)：区分固定宽度数学模型与 C 表达式语义。
 
 ## 运算规则
 

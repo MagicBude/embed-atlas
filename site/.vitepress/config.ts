@@ -61,6 +61,15 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: 'C 语言',
+          items: [
+            {
+              text: 'C 定宽整数、提升与溢出边界',
+              link: '/knowledge/c-language/c-fixed-width-integers',
+            },
+          ],
+        },
       ],
       '/tools/': [
         {
