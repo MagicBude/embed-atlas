@@ -13,6 +13,7 @@
 - [产品信息架构](product/information-architecture.md)
 - [UI 与交互设计原则](product/ui-ux-guidelines.md)
 - [在线工具路线图](product/tool-roadmap.md)
+- [Phase 1 首批知识内容计划](product/initial-content-plan.md)
 
 ## 调研
 

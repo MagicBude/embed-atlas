@@ -44,6 +44,15 @@ export default defineConfig({
           text: '知识库',
           items: [{ text: '分类总览', link: '/knowledge/' }],
         },
+        {
+          text: '基础知识',
+          items: [
+            {
+              text: '整数、进制与位模式',
+              link: '/knowledge/foundations/integer-radix-bit-pattern',
+            },
+          ],
+        },
       ],
       '/tools/': [
         {
