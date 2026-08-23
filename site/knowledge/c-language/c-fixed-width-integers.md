@@ -346,7 +346,7 @@ _Static_assert(sizeof(uint32_t) * CHAR_BIT == 32, "需要精确 32-bit uint32_t"
 - 前置：[二进制补码与有符号整数范围](../foundations/twos-complement-signed-range)。
 - 前置：[位运算、位掩码与寄存器字段](../foundations/bitwise-mask-register-field)。
 - 工具：[进制与位运算转换器](/tools/base-bit-converter)。
-- 后续：字节、字符、编码与字符串。
+- 后续：[字节、字符、编码与字符串](../foundations/bytes-characters-encoding)。
 
 ## 参考资料
 

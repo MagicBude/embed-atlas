@@ -16,12 +16,23 @@ description: 从通用原理到具体平台的中文嵌入式知识体系。
 | [整数、进制与位模式](./foundations/integer-radix-bit-pattern) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 | [二进制补码与有符号整数范围](./foundations/twos-complement-signed-range) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 | [位运算、位掩码与寄存器字段](./foundations/bitwise-mask-register-field) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
+| [字节、字符、编码与字符串](./foundations/bytes-characters-encoding) | 入门 | 待同行审阅 | [HEX、ASCII 与字符串转换器](/tools/hex-text-converter) |
+| [HEX 文本与原始二进制数据](./foundations/hex-text-binary-data) | 入门 | 待同行审阅 | [HEX、ASCII 与字符串转换器](/tools/hex-text-converter) |
+| [字节序与多字节整数](./foundations/endianness-multibyte-integer) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
+| [CRC 模型参数与标准检查值](./foundations/crc-model-parameters) | 入门 | 待同行审阅 | [CRC 计算器](/tools/crc-calculator) |
 
 ### C 语言
 
 | 文章 | 难度 | 状态 | 关联工具 |
 | --- | --- | --- | --- |
 | [C 定宽整数、整数提升与溢出边界](./c-language/c-fixed-width-integers) | 进阶 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
+
+### 通信协议
+
+| 文章 | 难度 | 状态 | 关联工具 |
+| --- | --- | --- | --- |
+| [UART 帧格式、波特率与实际传输位数](./protocols/uart-frame-basics) | 入门 | 待同行审阅 | [HEX、ASCII 与字符串转换器](/tools/hex-text-converter) |
+| [I²C 7 位地址与读写位](./protocols/i2c-address-read-write) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 
 ## 规划分类
 

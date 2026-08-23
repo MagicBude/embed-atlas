@@ -19,13 +19,13 @@ Phase 1 的 10 篇文章不追求覆盖整个嵌入式领域，而是围绕前�
 | 1 | `integer-radix-bit-pattern` | 整数、进制与位模式 | 基础知识 | 区分数值、书写进制、固定位宽和解释方式 | 进制与位运算转换器 | review |
 | 2 | `twos-complement-signed-range` | 二进制补码与有符号整数范围 | 基础知识 | 推导负数编码、符号扩展和范围不对称 | 进制与位运算转换器 | review |
 | 3 | `bitwise-mask-register-field` | 位运算、位掩码与寄存器字段 | 基础知识 | 解释置位、清零、切换、提取和组合字段 | 进制与位运算转换器 | review |
-| 4 | `bytes-characters-encoding` | 字节、字符、编码与字符串 | 基础知识 | 区分字符、码点、编码字节和字符串终止 | HEX、ASCII 与字符串转换器 | planned |
-| 5 | `hex-text-binary-data` | HEX 文本与原始二进制数据 | 基础知识 | 解释 `"41 42"`、两个字节和字符串之间的差别 | HEX、ASCII 与字符串转换器 | planned |
-| 6 | `crc-model-parameters` | CRC 模型参数与标准检查值 | 基础知识 | 解释 Poly、Init、RefIn、RefOut、XorOut 和 Check | CRC 计算器 | planned |
+| 4 | `bytes-characters-encoding` | 字节、字符、编码与字符串 | 基础知识 | 区分字符、码点、编码字节和字符串终止 | HEX、ASCII 与字符串转换器 | review |
+| 5 | `hex-text-binary-data` | HEX 文本与原始二进制数据 | 基础知识 | 解释 `"41 42"`、两个字节和字符串之间的差别 | HEX、ASCII 与字符串转换器 | review |
+| 6 | `crc-model-parameters` | CRC 模型参数与标准检查值 | 基础知识 | 解释 Poly、Init、RefIn、RefOut、XorOut 和 Check | CRC 计算器 | review |
 | 7 | `c-fixed-width-integers` | C 定宽整数、提升与溢出边界 | C 语言 | 把固定位宽数学模型连接到 `<stdint.h>` 和表达式规则 | 进制与位运算转换器 | review |
-| 8 | `endianness-multibyte-integer` | 字节序与多字节整数 | 基础知识 | 区分数值、字节序列和线路/内存顺序 | 后续大小端工具 | planned |
-| 9 | `uart-frame-basics` | UART 帧格式、波特率与实际传输位数 | 通信协议 | 建立串口帧和传输时间的基础模型 | 后续 UART 工具 | planned |
-| 10 | `i2c-address-read-write` | I2C 7 位地址与读写位 | 通信协议 | 解释 7 位地址、地址字节和常见 8 位写法误区 | 后续 I2C 工具 | planned |
+| 8 | `endianness-multibyte-integer` | 字节序与多字节整数 | 基础知识 | 区分数值、字节序列和线路/内存顺序 | 后续大小端工具 | review |
+| 9 | `uart-frame-basics` | UART 帧格式、波特率与实际传输位数 | 通信协议 | 建立串口帧和传输时间的基础模型 | 后续 UART 工具 | review |
+| 10 | `i2c-address-read-write` | I2C 7 位地址与读写位 | 通信协议 | 解释 7 位地址、地址字节和常见 8 位写法误区 | 后续 I2C 工具 | review |
 
 `planned` 是本计划的工作状态，不是网站文章 frontmatter 的公开状态；文件创建后使用内容系统规定的 `draft`、`review`、`verified` 或 `deprecated`。
 

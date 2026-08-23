@@ -59,6 +59,22 @@ export default defineConfig({
               text: '位运算、位掩码与寄存器字段',
               link: '/knowledge/foundations/bitwise-mask-register-field',
             },
+            {
+              text: '字节、字符、编码与字符串',
+              link: '/knowledge/foundations/bytes-characters-encoding',
+            },
+            {
+              text: 'HEX 文本与原始二进制数据',
+              link: '/knowledge/foundations/hex-text-binary-data',
+            },
+            {
+              text: '字节序与多字节整数',
+              link: '/knowledge/foundations/endianness-multibyte-integer',
+            },
+            {
+              text: 'CRC 模型参数与标准检查值',
+              link: '/knowledge/foundations/crc-model-parameters',
+            },
           ],
         },
         {
@@ -67,6 +83,19 @@ export default defineConfig({
             {
               text: 'C 定宽整数、提升与溢出边界',
               link: '/knowledge/c-language/c-fixed-width-integers',
+            },
+          ],
+        },
+        {
+          text: '通信协议',
+          items: [
+            {
+              text: 'UART 帧格式、波特率与实际传输位数',
+              link: '/knowledge/protocols/uart-frame-basics',
+            },
+            {
+              text: 'I²C 7 位地址与读写位',
+              link: '/knowledge/protocols/i2c-address-read-write',
             },
           ],
         },
@@ -79,6 +108,14 @@ export default defineConfig({
             {
               text: '进制与位运算转换器',
               link: '/tools/base-bit-converter',
+            },
+            {
+              text: 'HEX、ASCII 与字符串转换器',
+              link: '/tools/hex-text-converter',
+            },
+            {
+              text: 'CRC 计算器',
+              link: '/tools/crc-calculator',
             },
           ],
         },
