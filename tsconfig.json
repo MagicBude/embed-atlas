@@ -13,9 +13,11 @@
     "skipLibCheck": true
   },
   "include": [
+    "vitest.config.ts",
     "site/.vitepress/**/*.ts",
     "site/.vitepress/**/*.vue",
     "site/**/*.ts",
-    "site/**/*.vue"
+    "site/**/*.vue",
+    "tests/**/*.ts"
   ]
 }

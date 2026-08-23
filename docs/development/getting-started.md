@@ -43,10 +43,16 @@ npm run dev
 # 只执行 TypeScript 和 Vue 类型检查
 npm run typecheck
 
+# 执行一次全部单元测试
+npm run test
+
+# 开发计算核心时持续监听测试文件
+npm run test:watch
+
 # 只执行生产构建
 npm run build
 
-# 按顺序执行类型检查和生产构建，提交前优先使用此命令
+# 按顺序执行类型检查、单元测试和生产构建，提交前优先使用此命令
 npm run check
 ```
 
@@ -70,6 +76,7 @@ npm run preview
 - VitePress 1.6.4。
 - Vue 3.5.41。
 - TypeScript 5.9.3。
+- Vitest 3.2.7。
 - vue-tsc 3.3.11。
 
 选择固定版本是为了让不同设备和自动化环境得到一致结果。升级依赖前应先阅读发布说明，执行 `npm run check`，并检查桌面与窄屏页面。
