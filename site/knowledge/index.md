@@ -15,6 +15,7 @@ description: 从通用原理到具体平台的中文嵌入式知识体系。
 | --- | --- | --- | --- |
 | [整数、进制与位模式](./foundations/integer-radix-bit-pattern) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 | [二进制补码与有符号整数范围](./foundations/twos-complement-signed-range) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
+| [位运算、位掩码与寄存器字段](./foundations/bitwise-mask-register-field) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 
 ## 规划分类
 

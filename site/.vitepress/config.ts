@@ -55,6 +55,10 @@ export default defineConfig({
               text: '二进制补码与有符号整数范围',
               link: '/knowledge/foundations/twos-complement-signed-range',
             },
+            {
+              text: '位运算、位掩码与寄存器字段',
+              link: '/knowledge/foundations/bitwise-mask-register-field',
+            },
           ],
         },
       ],
