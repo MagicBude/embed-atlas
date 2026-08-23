@@ -48,7 +48,13 @@ export default defineConfig({
       '/tools/': [
         {
           text: '在线工具箱',
-          items: [{ text: '工具总览', link: '/tools/' }],
+          items: [
+            { text: '工具总览', link: '/tools/' },
+            {
+              text: '进制与位运算转换器',
+              link: '/tools/base-bit-converter',
+            },
+          ],
         },
       ],
       '/reference/': [
