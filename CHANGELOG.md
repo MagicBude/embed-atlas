@@ -41,6 +41,7 @@
 
 ### Changed
 
+- EmbedAtlas 已首次公开部署到 GitHub Pages，README 增加公开站点入口。
 - 完成“整数、进制与位模式”的第二次技术复核，补充到补码专题文章的正式内部链接。
 
 ### Fixed

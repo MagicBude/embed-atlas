@@ -91,6 +91,17 @@ Remove-Item Env:VITEPRESS_BASE
 
 推送到 `main` 后，`.github/workflows/deploy-pages.yml` 会自动执行完整检查并发布。首次发布前，还需要在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中把 Source 设为 **GitHub Actions**。
 
+## 公开部署回滚
+
+Pages 工作流只发布通过检查的 `main` 提交。如果公开站点出现阻塞问题，优先用 `git revert` 创建一个撤销故障提交的新提交，再推送触发部署：
+
+```powershell
+git revert <导致故障的完整提交 SHA>
+git push origin main
+```
+
+这种方式保留完整历史，也会重新经过质量检查。不要用强制推送或重写 `main` 历史回滚公开站点。紧急情况下也可以从 GitHub Actions 页面重新运行某个已知良好提交的 Pages 工作流，但随后仍应在 `main` 中补上可追溯的修复或撤销提交。
+
 ## 技术版本说明
 
 当前直接依赖固定为：
