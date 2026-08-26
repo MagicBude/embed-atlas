@@ -56,6 +56,13 @@ npm run build
 npm run check
 ```
 
+测试分为两层：
+
+- `tests/tools/` 在 Node 环境验证纯计算核心、边界和公开参考向量。
+- `tests/components/` 使用 Vue Test Utils 与 Happy DOM 挂载真实 Vue 组件，验证输入、选项切换、错误提示、重置和复制反馈。
+
+推送到 `main` 或创建 Pull Request 后，GitHub Actions 会在 Node.js 22 环境执行 `npm ci` 和 `npm run check`。CI 使用与本地相同的类型检查、测试和生产构建入口，不维护另一套隐藏命令。
+
 生产文件生成到 `site/.vitepress/dist/`。该目录是构建产物，已被 Git 忽略，不应提交。
 
 ## 本地预览生产结果
@@ -78,6 +85,9 @@ npm run preview
 - TypeScript 5.9.3。
 - Vitest 3.2.7。
 - vue-tsc 3.3.11。
+- Vue Test Utils 2.4.11。
+- Happy DOM 20.11.6。
+- Vite Vue Plugin 5.2.4。
 
 选择固定版本是为了让不同设备和自动化环境得到一致结果。升级依赖前应先阅读发布说明，执行 `npm run check`，并检查桌面与窄屏页面。
 
