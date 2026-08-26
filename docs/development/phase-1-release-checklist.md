@@ -17,6 +17,7 @@
 - [x] 在全新 GitHub Actions 环境使用 Node.js 22 执行 `npm ci` 成功。
 - [x] `npm run check` 成功，包括类型检查、核心测试、组件交互测试、内部链接检查和生产构建。
 - [x] GitHub Actions 对候选提交显示成功。
+- [ ] Pages 部署后的 `npm run smoke:public` 公开站点检查成功。
 - [x] `git diff --check` 无空白错误，候选提交创建时工作树没有遗漏的发布变更。
 - [x] `site/.vitepress/dist/` 等生成物未进入 Git。
 

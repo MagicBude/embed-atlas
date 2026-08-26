@@ -54,6 +54,9 @@ npm run build
 
 # 按顺序执行类型检查、单元测试和生产构建，提交前优先使用此命令
 npm run check
+
+# 检查当前公开站点的主要页面、资源、404 与搜索页面映射
+npm run smoke:public
 ```
 
 测试分为两层：
@@ -90,6 +93,8 @@ Remove-Item Env:VITEPRESS_BASE
 然后访问终端显示地址下的 `/embed-atlas/`，通常是 `http://127.0.0.1:4173/embed-atlas/`。关闭预览服务器后清除环境变量，日常 `npm run dev` 就会恢复使用根路径 `/`。
 
 推送到 `main` 后，`.github/workflows/deploy-pages.yml` 会自动执行完整检查并发布。首次发布前，还需要在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中把 Source 设为 **GitHub Actions**。
+
+Pages 部署成功后，工作流还会执行 `npm run smoke:public`，从公开 URL 验证主要页面、首页静态资源、404 响应和搜索页面映射。该命令不替代真实浏览器中的工具交互、键盘和响应式布局检查。
 
 ## 公开部署回滚
 
