@@ -5,6 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import BaseBitConverter from '../../site/components/tools/BaseBitConverter.vue';
 import CrcCalculator from '../../site/components/tools/CrcCalculator.vue';
+import EndiannessConverter from '../../site/components/tools/EndiannessConverter.vue';
 import HexTextConverter from '../../site/components/tools/HexTextConverter.vue';
 
 /**
@@ -114,6 +115,41 @@ describe('CrcCalculator component', () => {
     await buttonByText(wrapper, '复制结果').trigger('click');
     expect(navigator.clipboard.writeText).toHaveBeenCalledWith('0xCBF43926');
     expect(wrapper.get('.copy-feedback').text()).toBe('已复制 CRC 结果。');
+  });
+});
+
+describe('EndiannessConverter component', () => {
+  it('实时比较同一 byte 序列的大端和小端解释', async () => {
+    const wrapper = mount(EndiannessConverter);
+
+    expect(wrapper.get('.result-panel').text()).toContain('0x12345678');
+    expect(wrapper.get('.result-panel').text()).toContain('0x78563412');
+
+    await wrapper.get('textarea').setValue('34 12');
+    expect(wrapper.get('.result-panel').text()).toContain('0x3412');
+    expect(wrapper.get('.result-panel').text()).toContain('0x1234');
+
+    await wrapper.get('textarea').setValue('12 G4');
+    expect(wrapper.get('[role="alert"]').text()).toContain('字符“G”无效');
+  });
+
+  it('把固定宽度整数编码为两种 byte 序列并拒绝溢出', async () => {
+    const wrapper = mount(EndiannessConverter);
+
+    await wrapper.findAll('input[type="radio"]')[1].setValue(true);
+    const integerInput = wrapper.get('input[placeholder="例如：12345678"]');
+    await integerInput.setValue('1');
+    expect(wrapper.get('.result-panel').text()).toContain('00 00 00 01');
+    expect(wrapper.get('.result-panel').text()).toContain('01 00 00 00');
+
+    await wrapper.findAll('select')[1].setValue('1');
+    await integerInput.setValue('100');
+    expect(wrapper.get('[role="alert"]').text()).toContain('超出 1 byte');
+
+    await integerInput.setValue('FF');
+    await buttonByText(wrapper, '复制').trigger('click');
+    expect(navigator.clipboard.writeText).toHaveBeenCalledWith('FF');
+    expect(wrapper.get('.copy-feedback').text()).toBe('已复制结果。');
   });
 });
 

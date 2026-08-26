@@ -28,6 +28,7 @@ const pageChecks = [
   { path: 'tools/base-bit-converter', marker: '进制与位运算转换器' },
   { path: 'tools/hex-text-converter', marker: 'HEX、ASCII 与字符串转换器' },
   { path: 'tools/crc-calculator', marker: 'CRC 计算器' },
+  { path: 'tools/endianness-converter', marker: '大小端与字节交换转换器' },
   { path: 'about/', marker: '关于 EmbedAtlas' },
 ]
 
@@ -36,6 +37,7 @@ const expectedSearchPages = [
   'tools_base-bit-converter.md',
   'tools_hex-text-converter.md',
   'tools_crc-calculator.md',
+  'tools_endianness-converter.md',
 ]
 
 /**

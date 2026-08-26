@@ -147,6 +147,7 @@ value = 0x78
 
 ## 关联工具与延伸阅读
 
+- 用[大小端与字节交换转换器](/tools/endianness-converter)直接比较同一 byte 序列的两种解释，或生成固定宽度协议字段。
 - 用[进制与位运算转换器](/tools/base-bit-converter)检查移位与掩码结果。
 - 用 [HEX、ASCII 与字符串转换器](/tools/hex-text-converter)规范化输入字节；它不会替你猜字段字节序。
 - 下一组内容：[CRC 模型参数与标准检查值](./crc-model-parameters)。

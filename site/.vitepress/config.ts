@@ -132,6 +132,10 @@ export default defineConfig({
               text: 'CRC 计算器',
               link: '/tools/crc-calculator',
             },
+            {
+              text: '大小端与字节交换转换器',
+              link: '/tools/endianness-converter',
+            },
           ],
         },
       ],
