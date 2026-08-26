@@ -31,6 +31,7 @@
 
 - [开始开发](development/getting-started.md)
 - [开发工作流](development/workflow.md)
+- [Phase 1 发布前检查清单](development/phase-1-release-checklist.md)
 - [工作日志](work-log.md)
 
 ## 规范

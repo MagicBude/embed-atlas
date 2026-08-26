@@ -1,0 +1,37 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Typecheck, test and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      # `npm ci` 严格按锁文件安装；package.json 与锁文件不一致时立即失败，
+      # 避免 CI 在未记录的依赖版本上产生“本机能过、远端不同”的结果。
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Run repository checks
+        run: npm run check
