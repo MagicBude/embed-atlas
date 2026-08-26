@@ -26,6 +26,7 @@ description: 按前置关系和实践目标组织嵌入式学习内容。
 5. [字节、字符、编码与字符串](/knowledge/foundations/bytes-characters-encoding)：进入真实数据缓冲区。
 6. [HEX 文本与原始二进制数据](/knowledge/foundations/hex-text-binary-data)：学会读日志和抓包。
 7. [字节序与多字节整数](/knowledge/foundations/endianness-multibyte-integer)：可靠地序列化协议字段。
+8. [IEEE 754 单精度与双精度浮点数表示](/knowledge/foundations/ieee-754-floating-point)：理解传感器和协议中的浮点位模式、特殊值与精度边界。
 
 每一步都可使用对应的[在线工具箱](/tools/)手算并交叉验证。
 

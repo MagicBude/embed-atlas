@@ -23,6 +23,10 @@ const pageChecks = [
     path: 'knowledge/foundations/integer-radix-bit-pattern',
     marker: '整数、进制与位模式',
   },
+  {
+    path: 'knowledge/foundations/ieee-754-floating-point',
+    marker: 'IEEE 754 单精度与双精度浮点数表示',
+  },
   { path: 'learning-paths/', marker: '学习路线' },
   { path: 'tools/', marker: '在线工具箱' },
   { path: 'tools/base-bit-converter', marker: '进制与位运算转换器' },
@@ -34,6 +38,7 @@ const pageChecks = [
 
 const expectedSearchPages = [
   'knowledge_foundations_integer-radix-bit-pattern.md',
+  'knowledge_foundations_ieee-754-floating-point.md',
   'tools_base-bit-converter.md',
   'tools_hex-text-converter.md',
   'tools_crc-calculator.md',

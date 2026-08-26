@@ -20,6 +20,7 @@ description: 从通用原理到具体平台的中文嵌入式知识体系。
 | [HEX 文本与原始二进制数据](./foundations/hex-text-binary-data) | 入门 | 待同行审阅 | [HEX、ASCII 与字符串转换器](/tools/hex-text-converter) |
 | [字节序与多字节整数](./foundations/endianness-multibyte-integer) | 入门 | 待同行审阅 | [进制与位运算转换器](/tools/base-bit-converter) |
 | [CRC 模型参数与标准检查值](./foundations/crc-model-parameters) | 入门 | 待同行审阅 | [CRC 计算器](/tools/crc-calculator) |
+| [IEEE 754 单精度与双精度浮点数表示](./foundations/ieee-754-floating-point) | 进阶 | 待同行审阅 | 解析工具开发中 |
 
 ### C 语言
 

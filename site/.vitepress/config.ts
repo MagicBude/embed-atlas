@@ -90,6 +90,10 @@ export default defineConfig({
               text: 'CRC 模型参数与标准检查值',
               link: '/knowledge/foundations/crc-model-parameters',
             },
+            {
+              text: 'IEEE 754 浮点数表示',
+              link: '/knowledge/foundations/ieee-754-floating-point',
+            },
           ],
         },
         {
