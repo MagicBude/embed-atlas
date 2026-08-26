@@ -21,3 +21,4 @@ NNNN-short-title.md
 
 - [ADR-0001：使用 VitePress、Vue 和 TypeScript 构建第一阶段网站](0001-website-foundation.md)
 - [ADR-0002：中文优先并为路径式多语言预留架构](0002-internationalization-strategy.md)
+- [ADR-0003：使用 GitHub Pages 发布第一阶段网站](0003-github-pages-deployment.md)

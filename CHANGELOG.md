@@ -6,6 +6,7 @@
 
 ### Added
 
+- 增加 GitHub Pages 自动部署、仓库子路径构建配置、ADR-0003 和 Pages 等价本地预览说明。
 - 增加三个工具的 Vue 组件交互自动化测试、GitHub Actions 统一质量检查流程和 Phase 1 发布前检查清单。
 - 完成 Phase 1 首批十篇文章，新增字符编码、HEX 与二进制、字节序、CRC、UART 和 I²C 六篇内容。
 - 新增 HEX、ASCII 与字符串转换器，支持 ASCII/UTF-8 严格编解码、常用 HEX 语法、结构化错误和 4096 byte 本地处理上限。

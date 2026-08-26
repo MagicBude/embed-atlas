@@ -1,6 +1,20 @@
 import { defineConfig } from 'vitepress'
 
 /**
+ * 站点可能运行在根域，也可能运行在 GitHub Pages 的仓库子路径下。
+ *
+ * 本地开发默认使用 `/`，因此访问地址保持简洁；部署工作流则注入
+ * `/embed-atlas/`，让 VitePress 为静态资源、导航和搜索索引统一添加
+ * 仓库路径前缀。环境变量必须同时以 `/` 开头和结尾，这是 VitePress
+ * `base` 的格式要求，也能避免手工拼接 URL 时出现双斜线或缺少分隔符。
+ */
+const siteBase = process.env.VITEPRESS_BASE ?? '/'
+
+if (!siteBase.startsWith('/') || !siteBase.endsWith('/')) {
+  throw new Error('VITEPRESS_BASE 必须以 / 开头和结尾，例如 /embed-atlas/。')
+}
+
+/**
  * VitePress 的站点级配置。
  *
  * 本文件只保存跨页面共享且相对稳定的设置，例如导航、侧栏和搜索。
@@ -8,6 +22,7 @@ import { defineConfig } from 'vitepress'
  * 避免每增加一个页面都要修改全局配置。
  */
 export default defineConfig({
+  base: siteBase,
   lang: 'zh-CN',
   title: 'EmbedAtlas',
   titleTemplate: ':title | EmbedAtlas',

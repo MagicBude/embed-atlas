@@ -1,0 +1,67 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# 同一时间只允许一个 Pages 部署。正在运行的部署不强制取消，避免发布到一半
+# 被新提交打断；等待中的旧部署会由 GitHub 自动按并发组处理。
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build Pages artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      # EmbedAtlas 是项目站点，公开地址位于 /embed-atlas/ 子路径。
+      # 统一检查命令会在相同 base 下完成类型检查、测试和生产构建，
+      # 防止“质量流程通过，但 Pages 专用构建失败”成为两套结果。
+      - name: Check and build for repository path
+        run: npm run check
+        env:
+          VITEPRESS_BASE: /embed-atlas/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/.vitepress/dist
+
+  deploy:
+    name: Deploy Pages artifact
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

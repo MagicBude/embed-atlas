@@ -76,6 +76,21 @@ npm run preview
 
 预览服务器同样只监听 `127.0.0.1`。它用于检查生产构建结果，不代替日常开发命令。
 
+## 预览 GitHub Pages 路径
+
+EmbedAtlas 的 GitHub Pages 地址是 `https://magicbude.github.io/embed-atlas/`，因此发布构建必须使用 `/embed-atlas/` 作为基础路径。要在 Windows PowerShell 本地复现部署结果：
+
+```powershell
+$env:VITEPRESS_BASE = '/embed-atlas/'
+npm run build
+npm run preview
+Remove-Item Env:VITEPRESS_BASE
+```
+
+然后访问终端显示地址下的 `/embed-atlas/`，通常是 `http://127.0.0.1:4173/embed-atlas/`。关闭预览服务器后清除环境变量，日常 `npm run dev` 就会恢复使用根路径 `/`。
+
+推送到 `main` 后，`.github/workflows/deploy-pages.yml` 会自动执行完整检查并发布。首次发布前，还需要在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中把 Source 设为 **GitHub Actions**。
+
 ## 技术版本说明
 
 当前直接依赖固定为：
